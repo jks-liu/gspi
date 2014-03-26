@@ -617,5 +617,5 @@ build elf hex eep lss sym coff extcoff \
 clean clean_list program debug gdb-config
 
 love:
-	avrdude -p atmega88 -P usb -c usbasp -U flash:w:test-gspi.hex
+	avrdude -p atmega88 -P usb -c usbasp -U flash:w:$(target).hex
 
